@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title></title> 
+        <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=3.0, minimum-scale=1.0">
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" >
+     <link rel="stylesheet" href="iniciar.css">
+    </head>
+    <body>
+        <form action="http://localhost:5000/register" method="post">
+        <div class="login-container">
+            <h2>Iniciar Sesión</h2>
+            <form action="/submit_login" method="post">
+                <div class="input-container">
+                    <i class="fas fa-envelope icon"></i>
+                    <input type="email" id="email" name="email" placeholder="Email" required>
+                </div>
+
+                <div class="input-container">
+                    <i class="fas fa-key icon"></i>
+                    <input type="password" id="password" name="password" placeholder="Contraseña" required>
+                </div>
+
+                <a href="Inicio.html" class="button-link">Iniciar Sesion</a>
+            </form>
+            <p>¿No tienes una cuenta? <a href="Registrarse.html">Regístrate</a></p>
+        </div>
+    </body>
+</html>

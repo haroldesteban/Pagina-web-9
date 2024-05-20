@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>BankEasy - Tu banca fácil</title>
+    <style>
+        /*CSS.html login[username.pe]... */
+    </style>
+    <script>
+        function login() {
+            var username = document.getElementById('username').value;
+            var password = document.getElementById('password').value;
+
+            if(username == 'harold' && password == 'harold') {
+                // Redirige al usuario a la página de inicio después de iniciar sesión
+                window.location.href = 'inicio.html';
+            } else {
+                alert('Usuario o contraseña incorrectos.');
+            }
+        }
+
+        function register() {
+            var username = document.getElementById('reg_username').value;
+            var password = document.getElementById('reg_password').value;
+
+            // Aquí puedes agregar el código para registrar al usuario
+            // Por ejemplo, podrías almacenar el nombre de usuario y la contraseña en una base de datos
+
+            alert('Registro exitoso. Ahora puedes iniciar sesión.');
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Bienvenido a BankEasy</h1>
+        <p>Tu banca fácil y conveniente.</p>
+    </header>
+
+    <!-- Sección de inicio de sesión -->
+    <section>
+        <h2>Iniciar sesión</h2>
+        <input type="text" id="username" placeholder="Nombre de usuario">
+        <input type="password" id="password" placeholder="Contraseña">
+        <button onclick="login()">Ingresar</button>
+    </section>
+
+    <!-- Sección de registro -->
+    <section>
+        <h2>Registrarse</h2>
+        <input type="text" id="reg_username" placeholder="Nombre de usuario">
+        <input type="password" id="reg_password" placeholder="Contraseña">
+        <button onclick="register()">Registrarse</button>
+    </section>
+
+    <!-- Resto de la página... -->
+
+    <footer>
+        <p>© 2024 BankEasy. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
